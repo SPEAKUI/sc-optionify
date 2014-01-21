@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "type-component": "0.0.1",
-    "sc-merge": "0.0.2"
+    "sc-merge": "0.0.x"
   }
 }
