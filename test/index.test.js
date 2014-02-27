@@ -77,4 +77,28 @@ describe( "options", function () {
 
   } );
 
+  it( "should be able to accept an object to replace all options", function () {
+
+    var anObject = {
+      married: false,
+      name: "David",
+      country: "Japan"
+    };
+
+    optionify( anObject );
+
+    anObject.option( "visible", true );
+    anObject.option( "visible" ).should.be.true;
+
+    anObject.option( {
+      active: true,
+      member: true
+    } );
+
+    should( anObject.option( "visible" ) ).be.empty;
+    anObject.option( "active" ).should.be.true;
+    anObject.option( "member" ).should.be.true;
+
+  } );
+
 } );

@@ -6,13 +6,16 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SPEAKUI/sc-optionify"
+  },
   "author": "David Tsuji",
   "license": "MIT",
   "devDependencies": {
     "should": "~3.0.1"
   },
   "dependencies": {
-    "type-component": "0.0.1",
     "sc-merge": "0.0.x"
   }
 }
